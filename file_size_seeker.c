@@ -15,6 +15,8 @@
     // using lseek to get the number of bytes
     file_size = lseek(fd, 0, SEEK_END);
     printf("Then number of bytes in this file is :%d", file_size);
+    close(fd);
+    close(file_size);
     return 0;
 
  }
